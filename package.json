@@ -1,0 +1,24 @@
+{
+  "name": "polkadot-streamer",
+  "version": "0.0.2",
+  "description": "Stream polkadot blocks and events to Kafka",
+  "main": "./main.js",
+  "repository": "",
+  "author": "",
+  "license": "Apache 2.0",
+  "private": false,
+  "scripts": {
+    "moonbeam": "ts-node moonbeam.ts",
+    "karura": "ts-node karura.ts",
+    "polkadot": "ts-node polkadot.ts"
+  },
+  "dependencies": {
+    "@acala-network/api": "^4.0.2-2",
+    "@polkadot/api": "^6.3.1",
+    "moonbeam-types-bundle": "^2.0.2"
+  },
+  "devDependencies": {
+    "ts-node": "^9.1.1",
+    "typescript": "^4.3.2"
+  }
+}

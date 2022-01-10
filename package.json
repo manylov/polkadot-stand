@@ -8,7 +8,7 @@
   "license": "Apache 2.0",
   "private": false,
   "scripts": {
-    "moonbeam": "ts-node moonbeam.ts",
+    "moonriver": "ts-node moonriver.ts",
     "karura": "ts-node karura.ts",
     "polkadot": "ts-node polkadot.ts"
   },

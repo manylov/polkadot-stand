@@ -6,10 +6,11 @@ const start = async () => {
 
   const blockHash = '0xc8530e73c00ec4a64d949b5756ad173114a1850ee42ad9c964fad620114b492f'
 
-  const session = await polkadotApi.query.session.currentIndex.at(blockHash)
-  const currentEra = await polkadotApi.query.staking.currentEra.at(blockHash)
+  // const histApi = await polkadotApi.at('0xc8530e73c00ec4a64d949b5756ad173114a1850ee42ad9c964fad620114b492f')
 
-  console.log(session.toHuman(), currentEra.toHuman())
+  const acc = await polkadotApi.rpc.chain.getBlock()
+
+  console.log(acc.toHuman())
 }
 
 try {
